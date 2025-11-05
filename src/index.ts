@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import { PrismaClient } from "./generated/client/client.js";
+import { PrismaClient } from "@prisma/client";
 import express from "express";
 import { userRouter } from "./routes/user.js";
 import { todoRouter } from "./routes/todo.js";

@@ -65,7 +65,6 @@ userRouter.post("/signin",async (req,res) => {
                 password
             }
         });
-        console.log(JWT_USER_SECRET);
         if(user){
             const token = jwt.sign({
                 userId: user.id
